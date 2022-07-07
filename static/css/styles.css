@@ -1,12 +1,4 @@
 
-.body {
-    display: flex;
-    margin: 0;
-    background-color: #22223b;
-    height: 100%;
-    color: #14213d;
-
-}
 
 h1, h2, h3, p {
     font-family: 'Lato', sans-serif;
@@ -55,6 +47,14 @@ ul {
   padding: 0;
 }
 
+.body {
+    display: flex;
+    margin: 0;
+    background-color: #22223b;
+    height: 100%;
+    color: #14213d;
+
+}
 
 .row {
     display: flex;
@@ -80,6 +80,10 @@ ul {
     margin-top: 150px;
     margin-bottom: 50px;
     margin-right: 10px;
+}
+
+.hide {
+ display: none;   
 }
 
 .box1 {
@@ -154,6 +158,10 @@ a:hover {
   justify-content: center;
 }
 
+.hide {
+  display: inline-block;    
+}
+    
 .disapper {
   display: none;
 }

@@ -12,9 +12,10 @@
 
 </head>
 
-<body class="body">
-
-  <div class='box2'></div>
+<body class="body" id='background'>
+  <div class='box2'>
+  <img class='sideimg' src='static/images/DJI_02282022LR2.jpg'>
+  </div>
   <div class='box1'>
     <div class="spacer">
       <h2>&nbsp</h>
@@ -46,9 +47,9 @@
     <div class="row row1 row2">
       <ul>
       <p>
-        https://pokerplay.herokuapp.com &nbsp
+        Python:&nbsp https://pokerplay.herokuapp.com &nbsp
       </p>
-      <p>https://orlys112561.github.io/OCSDictionary</p>
+      <p>Javascript:&nbsp  https://orlys112561.github.io/OCSDictionary</p>
     </ul>
     </div>
     <div class='foot_spacer'>
@@ -58,9 +59,21 @@
         <i class="fa-solid fa-envelope"></i>&nbsp; ocsolano1@gmail.com
       </p>
     </div>
+
   </div>
 <div class='box2'>
+  <img class='sideimg' src='static/images/DJI_02282022LR.jpg'>
 </div>
+<script>
+  var i = 0;
+  function change() {
+  var doc = document.getElementById("background");
+  var color = ["#06283D","#06283D","#22223b"];
+  doc.style.backgroundColor = color[i];
+  i = (i + 1) % color.length;
+  }
+  setInterval(change, 2000);
+</script>
 </body>
 
 </html>
